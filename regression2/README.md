@@ -9,8 +9,7 @@ where $z$ is the complex input with values between -2.0 and 2.0 for both real an
 
 The following is the plot of the function:
 
-![Plot](https://gitlab.surrey.ac.uk/cf0014/ffnn/-/raw/main/sample_plot.png)
-
+![sample_plot](https://github.com/cfoh/FFNN-Examples/assets/51439829/71d48a24-e050-498a-8707-e1e9ae555e7a)
 
 ## The Dataset
 
@@ -58,5 +57,6 @@ Epoch 200/200
 80/80 [==============================] - 0s 587us/step - loss: 0.0165
 ```
 
-![Plot](https://gitlab.surrey.ac.uk/cf0014/ffnn/-/raw/main/ffnn.png)
+![ffnn](https://github.com/cfoh/FFNN-Examples/assets/51439829/74c020fc-3d1a-4bd3-8d4a-d49e12a74ca1)
+
 
