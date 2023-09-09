@@ -21,7 +21,6 @@ A feed-forward neural network (FFNN) is a fundamental architecture in machine le
 - Output Layer: The output layer produces the final result or prediction. 
   The number of neurons in this layer depends on the type of problem. For binary classification problems, you might have one output neuron; for multi-class classification, there could be multiple output neurons, one for each class.
 
-![ffnn](https://github.com/cfoh/FFNN-Examples/assets/51439829/52b8b1d8-6a36-4df4-a727-b73b092e164f)
 ![ffnn](https://github.com/cfoh/FFNN-Examples/assets/51439829/f1ca2896-5c9a-45f6-8473-3cc727c5ff37)
 
 
