@@ -5,19 +5,7 @@
 - [Setup Your Python Virtual Environment](#setup)
 - [Explore the Examples](#examples)
 
-<table>
-<tr>
-<td valign="top">
-    <ul>
-        <li><a href=#intro>Introduction</a></li>
-        <li><a href=#setup>Setup Your Python Virtual Environment</a></li>
-        <li><a href=#examples>Explore the Examples</a></li>
-    </ul>
-</td>
-</tr></table>
-
-
-## Introduction<a name=intro></a>
+## Introduction <a name=intro></a>
 
 A feed-forward neural network (FFNN) is a fundamental architecture in machine learning (ML) and deep learning. It is a type of artificial neural network where the connections between nodes (neurons) do not form cycles, meaning that information flows in one direction, from the input layer to the output layer, without any loops or feedback connections.
 
@@ -62,7 +50,7 @@ The architecture and performance of an FFNN depend on hyperparameters like the n
 
 Overfitting is a common challenge; regularization techniques like dropout or L2 regularization are often applied to mitigate this issue.
 
-## Setup Your Python Virtual Environment <a name=esetup></a>
+## Setup Your Python Virtual Environment <a name=setup></a>
 
 Create a Python virtual environment for your project. This can be done by the following commands. After executing the first command shown below, you should see a new folder `venv` which contains the information about your virtual environment. The second command activates the environment.
 
