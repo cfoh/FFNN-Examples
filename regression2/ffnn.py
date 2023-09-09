@@ -29,7 +29,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 from tensorflow.keras.models import Sequential, load_model
 from tensorflow.keras.layers import Dense
 
-run_mode = 2    # 1: train & save the model into a folder
+run_mode = 3    # 1: train & save the model into a folder
                 # 2: train but don't save the model
                 # 3: load the saved model
 

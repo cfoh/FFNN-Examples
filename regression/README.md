@@ -57,6 +57,13 @@ Epoch 200/200
 80/80 [==============================] - 0s 639us/step - loss: 0.2383
 ```
 
+The model is now ready for prediction. Do the following to predict a single point:
+
+```python
+x1, x2 = -0.8, 3.6
+y = model.predict(np.array([[x1,x2]]),verbose=0)[0][0]
+```
+
 ![ffnn](https://github.com/cfoh/FFNN-Examples/assets/51439829/29d4ec8b-16cd-4b62-84c0-79c6ddc7a847)
 
 

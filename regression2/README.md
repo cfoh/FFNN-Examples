@@ -57,6 +57,13 @@ Epoch 200/200
 80/80 [==============================] - 0s 587us/step - loss: 0.0165
 ```
 
+The model is now ready for prediction. Do the following to predict a single point:
+
+```python
+z_real, z_imag = -0.8, 1.6
+f_real, f_imag = model.predict(np.array([[z_real,z_imag]]),verbose=0)[0]
+```
+
 ![ffnn](https://github.com/cfoh/FFNN-Examples/assets/51439829/74c020fc-3d1a-4bd3-8d4a-d49e12a74ca1)
 
 
