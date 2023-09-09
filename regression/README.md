@@ -9,8 +9,7 @@ where $x_1$ and $x_2$ are two inputs between -5.0 and 5.0.
 
 The following is the plot of the function:
 
-![Plot](https://gitlab.surrey.ac.uk/cf0014/ffnn/-/raw/main/sample_plot.png)
-
+![sample_plot](https://github.com/cfoh/FFNN-Examples/assets/51439829/6cffdf72-ada7-4d41-9505-ff7f20c7feed)
 
 ## The Dataset
 
@@ -58,5 +57,6 @@ Epoch 200/200
 80/80 [==============================] - 0s 639us/step - loss: 0.2383
 ```
 
-![Plot](https://gitlab.surrey.ac.uk/cf0014/ffnn/-/raw/main/ffnn.png)
+![ffnn](https://github.com/cfoh/FFNN-Examples/assets/51439829/29d4ec8b-16cd-4b62-84c0-79c6ddc7a847)
+
 
