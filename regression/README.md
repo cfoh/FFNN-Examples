@@ -9,7 +9,7 @@ where $x_1$ and $x_2$ are two inputs between -5.0 and 5.0.
 
 The following is the plot of the function:
 
-![sample_plot](https://github.com/cfoh/FFNN-Examples/assets/51439829/6cffdf72-ada7-4d41-9505-ff7f20c7feed)
+![sample_plot](https://github.com/cfoh/FFNN-Examples/assets/51439829/6aa48810-596e-4cd3-b0b0-098b832c07b0)
 
 ## The Dataset
 
@@ -64,6 +64,4 @@ x1, x2 = -0.8, 3.6
 y = model.predict(np.array([[x1,x2]]),verbose=0)[0][0]
 ```
 
-![ffnn](https://github.com/cfoh/FFNN-Examples/assets/51439829/29d4ec8b-16cd-4b62-84c0-79c6ddc7a847)
-
-
+![ffnn](https://github.com/cfoh/FFNN-Examples/assets/51439829/838c3a4a-7951-4bb9-a187-c2ba3d69fb62)
