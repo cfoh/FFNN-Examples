@@ -5,7 +5,8 @@
 This is a very simple example showing how FFNN can be used for classification.
 We use a well-known [IRIS dataset](https://www.kaggle.com/datasets/uciml/iris) for classification.
 
-![Plot](https://gitlab.surrey.ac.uk/cf0014/ffnn/-/raw/main/iris_img.png)
+![iris_img](https://github.com/cfoh/FFNN-Examples/assets/51439829/9357bf69-2ab9-4ac3-8f03-51b18db05a9e)
+
 
 ## The Dataset
 
@@ -67,5 +68,6 @@ Epoch 100/100
 5/5 [==============================] - 0s 477us/step - loss: 0.2118 - accuracy: 0.9833
 ```
 
-![Plot](https://gitlab.surrey.ac.uk/cf0014/ffnn/-/raw/main/ffnn.png)
+![ffnn](https://github.com/cfoh/FFNN-Examples/assets/51439829/4d150e7e-a60f-4006-8b2b-a8cd1bf89d6d)
+
 
