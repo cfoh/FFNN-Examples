@@ -5,11 +5,10 @@
 This is a very simple example showing how FFNN can be used for classification.
 We use a well-known [IRIS dataset](https://www.kaggle.com/datasets/uciml/iris) for classification.
 
-![iris_img](https://github.com/cfoh/FFNN-Examples/assets/51439829/9357bf69-2ab9-4ac3-8f03-51b18db05a9e)
 
 <p align="center">Image source: <a href="https://www.datacamp.com/tutorial/machine-learning-in-r">Machine Learning in R for beginners</a></p>
 
-
+![iris_img](https://github.com/cfoh/FFNN-Examples/assets/51439829/6453f36d-9831-4c02-9b8d-ef8e51e7aa46)
 
 ## The Dataset
 
@@ -71,6 +70,4 @@ Epoch 100/100
 5/5 [==============================] - 0s 477us/step - loss: 0.2118 - accuracy: 0.9833
 ```
 
-![ffnn](https://github.com/cfoh/FFNN-Examples/assets/51439829/4d150e7e-a60f-4006-8b2b-a8cd1bf89d6d)
-
-
+![ffnn](https://github.com/cfoh/FFNN-Examples/assets/51439829/6a75fab2-e3e0-49c0-9eda-4f06d6959f11)
