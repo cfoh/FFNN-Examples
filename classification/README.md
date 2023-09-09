@@ -7,6 +7,9 @@ We use a well-known [IRIS dataset](https://www.kaggle.com/datasets/uciml/iris) f
 
 ![iris_img](https://github.com/cfoh/FFNN-Examples/assets/51439829/9357bf69-2ab9-4ac3-8f03-51b18db05a9e)
 
+<p align="center">Image source: <a href="https://www.datacamp.com/tutorial/machine-learning-in-r">Machine Learning in R for beginners</a></p>
+
+
 
 ## The Dataset
 
