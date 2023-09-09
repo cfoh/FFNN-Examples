@@ -5,10 +5,8 @@
 This is a very simple example showing how FFNN can be used for classification.
 We use a well-known [IRIS dataset](https://www.kaggle.com/datasets/uciml/iris) for classification.
 
-
-<p align="center">Image source: <a href="https://www.datacamp.com/tutorial/machine-learning-in-r">Machine Learning in R for beginners</a></p>
-
 ![iris_img](https://github.com/cfoh/FFNN-Examples/assets/51439829/6453f36d-9831-4c02-9b8d-ef8e51e7aa46)
+<p align="center">Image source: <a href="https://www.datacamp.com/tutorial/machine-learning-in-r">Machine Learning in R for beginners</a></p>
 
 ## The Dataset
 
