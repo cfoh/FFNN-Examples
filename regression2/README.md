@@ -9,7 +9,7 @@ where $z$ is the complex input with values between -2.0 and 2.0 for both real an
 
 The following is the plot of the function:
 
-![sample_plot](https://github.com/cfoh/FFNN-Examples/assets/51439829/71d48a24-e050-498a-8707-e1e9ae555e7a)
+![sample_plot](https://github.com/cfoh/FFNN-Examples/assets/51439829/f7c20e9e-fb8b-41db-86da-6847fc67185a)
 
 ## The Dataset
 
@@ -64,6 +64,4 @@ z_real, z_imag = -0.8, 1.6
 f_real, f_imag = model.predict(np.array([[z_real,z_imag]]),verbose=0)[0]
 ```
 
-![ffnn](https://github.com/cfoh/FFNN-Examples/assets/51439829/74c020fc-3d1a-4bd3-8d4a-d49e12a74ca1)
-
-
+![ffnn](https://github.com/cfoh/FFNN-Examples/assets/51439829/3dc94771-da56-4f01-93fc-c4e2ab3e76c0)
