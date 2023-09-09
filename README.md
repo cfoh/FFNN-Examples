@@ -4,15 +4,13 @@
 - [Introduction](#intro)
 - [Setup Your Python Virtual Environment](#setup)
 - [Explore the Examples](#examples)
+  - [FFNN for Regression (single output)](https://github.com/cfoh/FFNN-Examples/tree/main/regression)
+  - [FFNN for Regression (multiple outputs)](https://github.com/cfoh/FFNN-Examples/tree/main/regression2)
+  - [FFNN for Classification](https://github.com/cfoh/FFNN-Examples/tree/main/classification)
 
 ## Introduction <a name=intro></a>
 
 A feed-forward neural network (FFNN) is a fundamental architecture in machine learning (ML) and deep learning. It is a type of artificial neural network where the connections between nodes (neurons) do not form cycles, meaning that information flows in one direction, from the input layer to the output layer, without any loops or feedback connections.
-
-This repo contains the following examples:
-- [FFNN for Regression (single output)](https://github.com/cfoh/FFNN-Examples/tree/main/regression)
-- [FFNN for Regression (multiple outputs)](https://github.com/cfoh/FFNN-Examples/tree/main/regression2)
-- [FFNN for Classification](https://github.com/cfoh/FFNN-Examples/tree/main/classification)
 
 #### Neural Network Structure
 
