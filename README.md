@@ -4,9 +4,15 @@
 - [Introduction](#intro)
 - [Setup Your Python Virtual Environment](#setup)
 - [Explore the Examples](#examples)
-  - [FFNN for Regression (single output)](https://github.com/cfoh/FFNN-Examples/tree/main/regression)
-  - [FFNN for Regression (multiple outputs)](https://github.com/cfoh/FFNN-Examples/tree/main/regression2)
-  - [FFNN for Classification](https://github.com/cfoh/FFNN-Examples/tree/main/classification)
+  - FFNN for Regression using (single output)
+    - [Using Tensorflow](https://github.com/cfoh/FFNN-Examples/tree/main/regression-tf)
+    - [Using Pytorch](https://github.com/cfoh/FFNN-Examples/tree/main/regression-pytorch)
+  - FFNN for Regression using Tensorflow (multiple outputs)
+    - [Using Tensorflow](https://github.com/cfoh/FFNN-Examples/tree/main/regression-tf2)
+    - [Using Pytorch](https://github.com/cfoh/FFNN-Examples/tree/main/regression-pytorch2)  
+  - FFNN for Classification
+    - [Using Tensorflow](https://github.com/cfoh/FFNN-Examples/tree/main/classification-tf)
+    - [Using Pytorch](https://github.com/cfoh/FFNN-Examples/tree/main/classification-pytorch)
 
 ## Introduction <a name=intro></a>
 
@@ -51,17 +57,25 @@ Overfitting is a common challenge; regularization techniques like dropout or L2 
 
 ## Setup Your Python Virtual Environment <a name=setup></a>
 
-Create a Python virtual environment for your project. This can be done by the following commands. After executing the first command shown below, you should see a new folder `venv` which contains the information about your virtual environment. The second command activates the environment.
+Create a Python virtual environment for your project. This can be done by the following commands. After executing the command shown below, you should see a new folder `venv` which contains the information about your virtual environment. 
 
 ```
 python3 -m venv venv
-source venv/bin/activate
+```
+
+All examples can share the same virtual environment. To achieve this, you can create `venv` under the parent folder. When trying with an example, say `regression-tf`, you should change directory to the example folder, and then activate the virtual environment by providing the its path:
+
+```
+cd regression-tf
+source ../venv/bin/activate
 ```
 
 Once your virtual environment is activated, you can install the packages and dependencies.
 
 ```
-pip install numpy pandas scikit-learn tensorflow
+pip install numpy pandas scikit-learn 
+pip install tensorflow
+pip install torch
 ```
 
 ## Explore the Examples <a name=examples></a>
@@ -79,5 +93,4 @@ The program has 3 run modes:
 - mode 2: train the model but don't save it
 - mode 3: (default) load the saved model from the folder
 
-By default, the program will read the model stored in the local folder and test the stored model. You can change the run mode to re-train the model.
-
+By default, the program will read the model stored in the local folder and test the stored model. You can change the run mode to `mode 1` to re-train the model.

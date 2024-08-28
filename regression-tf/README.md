@@ -57,7 +57,23 @@ Epoch 200/200
 80/80 [==============================] - 0s 639us/step - loss: 0.2383
 ```
 
-The model is now ready for prediction. Do the following to predict a single point:
+The following is the outcome using the provided stored model:
+
+```
+Loading stored model...
+
+Model performance:
+> Loss on test set: 0.181
+
+More test results using random inputs:
+> x1,x2 = -0.86, +0.14; predicted = +0.74; actual=+0.74; diff=0.00
+> x1,x2 = +1.52, +3.46; predicted = +4.65; actual=+4.90; diff=0.25
+> x1,x2 = +0.41, -1.55; predicted = -1.20; actual=-0.63; diff=0.57
+> x1,x2 = -1.55, +0.84; predicted = +0.66; actual=+0.19; diff=0.47
+> x1,x2 = -0.17, +3.57; predicted = -0.59; actual=-0.76; diff=0.18
+```
+
+The model is now ready for further prediction. Do the following to predict a single point:
 
 ```python
 x1, x2 = -0.8, 3.6
