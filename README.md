@@ -3,7 +3,7 @@
 ## Table of Contents
 - [Introduction](#intro)
 - [Setup Your Python Virtual Environment](#setup)
-- [Explore the Examples](#examples)
+- [Explore simple FFNN Examples](#simple-examples)
   - FFNN for Regression using (single output)
     - [Using Tensorflow](https://github.com/cfoh/FFNN-Examples/tree/main/regression-tf)
     - [Using Pytorch](https://github.com/cfoh/FFNN-Examples/tree/main/regression-pytorch)
@@ -18,7 +18,11 @@
 
 A feed-forward neural network (FFNN) is a fundamental architecture in machine learning (ML) and deep learning. It is a type of artificial neural network where the connections between nodes (neurons) do not form cycles, meaning that information flows in one direction, from the input layer to the output layer, without any loops or feedback connections.
 
-#### Neural Network Structure
+We can classify FFNN based on its structure. The commonly used FFNNs are:
+- simple FFNN with 1-dimensional (1D) inputs
+- convolutional neural network (CNND) with 2-dimensional (2D) inputs
+
+### Simple 1D Feed-Forward Neural Network Structure
 
 - Input Layer: The input layer consists of one or more neurons that receive the input data. 
   Each neuron represents a feature or attribute of the input data.
@@ -27,8 +31,9 @@ A feed-forward neural network (FFNN) is a fundamental architecture in machine le
 - Output Layer: The output layer produces the final result or prediction. 
   The number of neurons in this layer depends on the type of problem. For binary classification problems, you might have one output neuron; for multi-class classification, there could be multiple output neurons, one for each class.
 
-![ffnn](https://github.com/cfoh/FFNN-Examples/assets/51439829/f1ca2896-5c9a-45f6-8473-3cc727c5ff37)
+The following diagram shows a simple feed-forward neural network structure:
 
+![ffnn](https://github.com/cfoh/FFNN-Examples/assets/51439829/f1ca2896-5c9a-45f6-8473-3cc727c5ff37)
 
 #### Feed-forward Process
 
@@ -55,6 +60,15 @@ The architecture and performance of an FFNN depend on hyperparameters like the n
 
 Overfitting is a common challenge; regularization techniques like dropout or L2 regularization are often applied to mitigate this issue.
 
+### Convolutional Neural Network (CNN)
+
+A CNN is a specialized type of feed-forward neural network designed to process data with a grid-like topology, such as images. Unlike traditional neural networks that use fully connected layers, CNNs use convolutional layers to automatically and efficiently extract local features by applying filters (kernels) that scan across the input. This architecture allows CNNs to capture spatial hierarchies and patterns, such as edges, textures, and object parts, in a way that is translation-invariant. CNNs often include pooling layers to reduce dimensionality and computational complexity, followed by fully connected layers for classification or regression. They are widely used in computer vision tasks like image recognition, object detection, and medical imaging due to their high accuracy and ability to learn directly from raw data.
+
+The following shows an example of a well-known FFNN called LeNet-5 which includes a series of CNN architectures.
+
+![LeNet-5](https://github.com/user-attachments/assets/b72cea8e-0999-4e75-88ba-bd71b1923746)
+
+
 ## Setup Your Python Virtual Environment <a name=setup></a>
 
 Create a Python virtual environment for your project. This can be done by the following commands. After executing the command shown below, you should see a new folder `venv` which contains the information about your virtual environment. 
@@ -78,7 +92,7 @@ pip install tensorflow
 pip install torch
 ```
 
-## Explore the Examples <a name=examples></a>
+## Explore simple FFNN Examples <a name=simple-examples></a>
 
 The repo contains several examples using FFNN to perform regression, function approximation and classification. They can be found in their individual folder. 
 
