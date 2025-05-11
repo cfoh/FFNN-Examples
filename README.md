@@ -5,7 +5,7 @@
   - [1.1 Simple 1D Feed-Forward Neural Network Structure](#simple-FFNN)
   - [1.2 Convolutional Neural Network (CNN)](#CNN)
 - [2. Setup Your Python Virtual Environment](#setup)
-- [3. Explore simple FFNN Examples](#simple-examples)
+- [3. Explore simple 1D FFNN Examples](#simple-examples)
   - FFNN for Regression using (single output)
     - [Using Tensorflow](https://github.com/cfoh/FFNN-Examples/tree/main/regression-tf)
     - [Using Pytorch](https://github.com/cfoh/FFNN-Examples/tree/main/regression-pytorch)
@@ -96,7 +96,7 @@ pip install tensorflow
 pip install torch
 ```
 
-## 3. Explore simple FFNN Examples <a name=simple-examples></a>
+## 3. Explore simple 1D FFNN Examples <a name=simple-examples></a>
 
 The repo contains several examples using FFNN to perform regression, function approximation and classification. They can be found in their individual folder. 
 
