@@ -1,9 +1,9 @@
 # Feed-Forward Neural Network (FFNN) ![Machine Learning: FFNN](https://img.shields.io/badge/Machine%20Learning-Neural%20Network-blueviolet) ![MIT License](https://img.shields.io/badge/License-MIT-green?logo=github)
 
 ## Table of Contents
-- [Introduction](#intro)
-- [Setup Your Python Virtual Environment](#setup)
-- [Explore simple FFNN Examples](#simple-examples)
+- [1. Introduction](#intro)
+- [2. Setup Your Python Virtual Environment](#setup)
+- [3. Explore simple FFNN Examples](#simple-examples)
   - FFNN for Regression using (single output)
     - [Using Tensorflow](https://github.com/cfoh/FFNN-Examples/tree/main/regression-tf)
     - [Using Pytorch](https://github.com/cfoh/FFNN-Examples/tree/main/regression-pytorch)
@@ -14,7 +14,7 @@
     - [Using Tensorflow](https://github.com/cfoh/FFNN-Examples/tree/main/classification-tf)
     - [Using Pytorch](https://github.com/cfoh/FFNN-Examples/tree/main/classification-pytorch)
 
-## Introduction <a name=intro></a>
+## 1. Introduction <a name=intro></a>
 
 A feed-forward neural network (FFNN) is a fundamental architecture in machine learning (ML) and deep learning. It is a type of artificial neural network where the connections between nodes (neurons) do not form cycles, meaning that information flows in one direction, from the input layer to the output layer, without any loops or feedback connections.
 
@@ -22,7 +22,7 @@ We can classify FFNN based on its structure. The commonly used FFNNs are:
 - simple FFNN with 1-dimensional (1D) inputs
 - convolutional neural network (CNND) with 2-dimensional (2D) inputs
 
-### Simple 1D Feed-Forward Neural Network Structure
+### 1.1 Simple 1D Feed-Forward Neural Network Structure
 
 - Input Layer: The input layer consists of one or more neurons that receive the input data. 
   Each neuron represents a feature or attribute of the input data.
@@ -35,32 +35,34 @@ The following diagram shows a simple feed-forward neural network structure:
 
 ![ffnn](https://github.com/cfoh/FFNN-Examples/assets/51439829/f1ca2896-5c9a-45f6-8473-3cc727c5ff37)
 
-#### Feed-forward Process
+#### 1.1.1 Feed-forward Process
 
 During the feed-forward process, data flows through the network in one direction, from the input layer to the output layer.
 Each neuron in a hidden or output layer computes a weighted sum of its inputs, applies an activation function to this sum, and passes the result as output to the next layer.
 The weighted sum calculation involves multiplying each input by a corresponding weight and summing these products, often adding a bias term.
 The activation function introduces non-linearity into the model, allowing the network to capture complex patterns in the data. Common activation functions include ReLU (Rectified Linear Unit), sigmoid, and tanh.
 
-#### Training
+Given a trained FFNN model, this process performs **inference** where it computes the output(s) based on the given inputs.
 
-To make the network learn from data, you need a labeled dataset and a loss function that quantifies how well the network's predictions match the actual labels.
+#### 1.1.2 Training
 
-Optimization algorithms like gradient descent are used to minimize the loss by adjusting the weights and biases in the network.
+To make the FFNN model learn from data, you need a labeled dataset and a loss function that quantifies how well the model's predictions match the actual labels.
 
-Backpropagation is a key technique for updating the network's parameters. It computes the gradients of the loss with respect to the network's weights and propagates these gradients backward through the layers to make weight updates.
+Optimization algorithms like gradient descent are used to minimize the loss by adjusting the weights and biases in the FFNN model.
 
-#### Applications
+Backpropagation is a key technique for updating the model's parameters. It computes the gradients of the loss with respect to the weights of the FFNN and propagates these gradients backward through the layers to make weight updates.
+
+#### 1.1.3 Applications
 
 FFNNs are versatile and can be used for various machine learning tasks, including classification, regression, and function approximation.
 
-#### Challenges
+#### 1.1.4 Challenges
 
 The architecture and performance of an FFNN depend on hyperparameters like the number of layers, the number of neurons in each layer, and the choice of activation functions.
 
 Overfitting is a common challenge; regularization techniques like dropout or L2 regularization are often applied to mitigate this issue.
 
-### Convolutional Neural Network (CNN)
+### 1.2 Convolutional Neural Network (CNN)
 
 A CNN is a specialized type of feed-forward neural network designed to process data with a grid-like topology, such as images. Unlike traditional neural networks that use fully connected layers, CNNs use convolutional layers to automatically and efficiently extract local features by applying filters (kernels) that scan across the input. This architecture allows CNNs to capture spatial hierarchies and patterns, such as edges, textures, and object parts, in a way that is translation-invariant. CNNs often include pooling layers to reduce dimensionality and computational complexity, followed by fully connected layers for classification or regression. They are widely used in computer vision tasks like image recognition, object detection, and medical imaging due to their high accuracy and ability to learn directly from raw data.
 
@@ -69,7 +71,7 @@ The following shows an example of a well-known FFNN called LeNet-5 which include
 ![LeNet-5](https://github.com/user-attachments/assets/b72cea8e-0999-4e75-88ba-bd71b1923746)
 
 
-## Setup Your Python Virtual Environment <a name=setup></a>
+## 2. Setup Your Python Virtual Environment <a name=setup></a>
 
 Create a Python virtual environment for your project. This can be done by the following commands. After executing the command shown below, you should see a new folder `venv` which contains the information about your virtual environment. 
 
@@ -92,7 +94,7 @@ pip install tensorflow
 pip install torch
 ```
 
-## Explore simple FFNN Examples <a name=simple-examples></a>
+## 3. Explore simple FFNN Examples <a name=simple-examples></a>
 
 The repo contains several examples using FFNN to perform regression, function approximation and classification. They can be found in their individual folder. 
 
