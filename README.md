@@ -77,7 +77,9 @@ The following shows an example of a well-known FFNN called LeNet-5 which include
 
 As shown in LeNet-5, apart from the dense layer, two new layers are introduced, which are **convolutional** and **pooling** layers. The corresponding operations of convolutional and pooling layers are **convolution** and **pooling** operations respectively. An excellent explanation of these two operations can be found in this tutorial article: [A guide to convolution arithmetic for deep learning](https://arxiv.org/pdf/1603.07285).
 
-As illustrated in Fig. 1.1 in the tutorial article, the **convolution** operation undergoes the following process:
+In **convolution operation**, a filter (or kernel), $K$ is used to perform convolution with the input image $I$ to produce the output $S$. The following illustrates the convolution operation based on the example given in Fig. 1.1 of the tutorial article where a 3-by-3 filter (shown in subscripts) is used to apply on a 5-by-5 image (shown in blue) to produce a 3-by-3 output (shown in green). The convolution operation essentially performs a weighted sum by applying an element-wise product between the filter and a local region of the input image:
+
+$$S(i, j) = \sum_{m} \sum_{n} I(i + m, j + n) \cdot K(m, n)$$
 
 ![gif-conv](https://github.com/user-attachments/assets/ac84911f-6c94-4b03-bc53-6db29c179d14)
 
