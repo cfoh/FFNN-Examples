@@ -2,6 +2,8 @@
 
 ## Table of Contents
 - [1. Introduction](#intro)
+  - [1.1 Simple 1D Feed-Forward Neural Network Structure](#simple-FFNN)
+  - [1.2 Convolutional Neural Network (CNN)](#CNN)
 - [2. Setup Your Python Virtual Environment](#setup)
 - [3. Explore simple FFNN Examples](#simple-examples)
   - FFNN for Regression using (single output)
@@ -22,7 +24,7 @@ We can classify FFNN based on its structure. The commonly used FFNNs are:
 - simple FFNN with 1-dimensional (1D) inputs
 - convolutional neural network (CNND) with 2-dimensional (2D) inputs
 
-### 1.1 Simple 1D Feed-Forward Neural Network Structure
+### 1.1 Simple 1D Feed-Forward Neural Network Structure <a name=simple-FFNN></a>
 
 - Input Layer: The input layer consists of one or more neurons that receive the input data. 
   Each neuron represents a feature or attribute of the input data.
@@ -62,7 +64,7 @@ The architecture and performance of an FFNN depend on hyperparameters like the n
 
 Overfitting is a common challenge; regularization techniques like dropout or L2 regularization are often applied to mitigate this issue.
 
-### 1.2 Convolutional Neural Network (CNN)
+### 1.2 Convolutional Neural Network (CNN) <a name=CNN></a>
 
 A CNN is a specialized type of feed-forward neural network designed to process data with a grid-like topology, such as images. Unlike traditional neural networks that use fully connected layers, CNNs use convolutional layers to automatically and efficiently extract local features by applying filters (kernels) that scan across the input. This architecture allows CNNs to capture spatial hierarchies and patterns, such as edges, textures, and object parts, in a way that is translation-invariant. CNNs often include pooling layers to reduce dimensionality and computational complexity, followed by fully connected layers for classification or regression. They are widely used in computer vision tasks like image recognition, object detection, and medical imaging due to their high accuracy and ability to learn directly from raw data.
 
