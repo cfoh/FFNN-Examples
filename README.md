@@ -66,12 +66,29 @@ Overfitting is a common challenge; regularization techniques like dropout or L2 
 
 ### 1.2 Convolutional Neural Network (CNN) <a name=CNN></a>
 
-A CNN is a specialized type of feed-forward neural network designed to process data with a grid-like topology, such as images. Unlike traditional neural networks that use fully connected layers, CNNs use convolutional layers to automatically and efficiently extract local features by applying filters (kernels) that scan across the input. This architecture allows CNNs to capture spatial hierarchies and patterns, such as edges, textures, and object parts, in a way that is translation-invariant. CNNs often include pooling layers to reduce dimensionality and computational complexity, followed by fully connected layers for classification or regression. They are widely used in computer vision tasks like image recognition, object detection, and medical imaging due to their high accuracy and ability to learn directly from raw data.
+A CNN is a specialized type of feed-forward neural network designed to process data with a grid-like topology or 2D inputs, such as images. Unlike traditional neural networks that use fully connected layers, CNNs use convolutional layers to automatically and efficiently extract local features by applying filters (kernels) that scan across the input. This architecture allows CNNs to capture spatial hierarchies and patterns, such as edges, textures, and object parts, in a way that is translation-invariant. CNNs often include pooling layers to reduce dimensionality and computational complexity, followed by fully connected layers for classification or regression. They are widely used in computer vision tasks like image recognition, object detection, and medical imaging due to their high accuracy and ability to learn directly from raw data.
 
 The following shows an example of a well-known FFNN called LeNet-5 which includes a series of CNN architectures.
 
 ![LeNet-5](https://github.com/user-attachments/assets/b72cea8e-0999-4e75-88ba-bd71b1923746)
 
+
+#### 1.2.1 The Convolution and Pooling Operations
+
+As shown in LeNet-5, apart from the dense layer, two new layers are introduced, which are **convolutional** and **pooling** layers. The corresponding operations of convolutional and pooling layers are **convolution** and **pooling** operations respectively. An excellent explanation of these two operations can be found in this tutorial article: [A guide to convolution arithmetic for deep learning](https://arxiv.org/pdf/1603.07285).
+
+As illustrated in Fig. 1.1 in the tutorial article, the **convolution** operation undergoes the following process:
+
+![gif-conv](https://github.com/user-attachments/assets/ac84911f-6c94-4b03-bc53-6db29c179d14)
+
+Likewise, as illustrated in Fig. 1.6 in the tutorial article, the **max pooling** operation undergoes the following process:
+
+
+
+
+#### 1.2.2 Applications
+
+CNNs are widely applied in tasks that involve spatial or visual data due to their ability to automatically learn and extract meaningful features from raw inputs. In computer vision, CNNs power applications such as image classification, object detection, facial recognition, and image segmentation.
 
 ## 2. Setup Your Python Virtual Environment <a name=setup></a>
 
