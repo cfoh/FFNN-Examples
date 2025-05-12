@@ -80,13 +80,13 @@ In **convolution operation**, a filter (or kernel), $K$ is used to perform convo
 
 $$S(i, j) = \sum_{m} \sum_{n} I(i + m, j + n) \cdot K(m, n)$$
 
-![gif-conv](https://github.com/user-attachments/assets/ac84911f-6c94-4b03-bc53-6db29c179d14)
+<img src="https://github.com/user-attachments/assets/ac84911f-6c94-4b03-bc53-6db29c179d14" width="400"/>
 
 Likewise, in **max pooling operation**, a sliding window, $\Omega$ is used to perform max pooling on the input $x$ to produce the output $y$. The following illustrates the convolution operation based on the example given in Fig. 1.6 of the tutorial article where a 3-by-3 window (shaded area) is used to apply on a 5-by-5 input (shown in blue) to produce a 3-by-3 output (shown in green). As can be seen, in each step, the output is simply the maximum value of the local region of $x$ covered by the sliding window.
 
 $$y(i, j) = \max_{(m, n) \in \Omega(i,j)} x(m, n)$$
 
-![gif-maxpool](https://github.com/user-attachments/assets/ce9c962c-6a10-4107-9442-fb224b50d78f)
+<img src="https://github.com/user-attachments/assets/ce9c962c-6a10-4107-9442-fb224b50d78f" width="400"/>
 
 #### 1.2.2 Applications
 
