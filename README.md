@@ -72,7 +72,6 @@ The following shows an example of a well-known FFNN called LeNet-5 which include
 
 ![LeNet-5](https://github.com/user-attachments/assets/b72cea8e-0999-4e75-88ba-bd71b1923746)
 
-
 #### 1.2.1 The Convolution and Pooling Operations
 
 As shown in LeNet-5, apart from the dense layer, two new layers are introduced, which are **convolutional** and **pooling** layers. The corresponding operations of convolutional and pooling layers are **convolution** and **pooling** operations respectively. An excellent explanation of these two operations can be found in this tutorial article: [A guide to convolution arithmetic for deep learning](https://arxiv.org/pdf/1603.07285).
@@ -83,10 +82,11 @@ $$S(i, j) = \sum_{m} \sum_{n} I(i + m, j + n) \cdot K(m, n)$$
 
 ![gif-conv](https://github.com/user-attachments/assets/ac84911f-6c94-4b03-bc53-6db29c179d14)
 
-Likewise, as illustrated in Fig. 1.6 in the tutorial article, the **max pooling** operation undergoes the following process:
+Likewise, in **max pooling operation**, a sliding window, $\Omega$ is used to perform max pooling on the input $x$ to produce the output $y$. The following illustrates the convolution operation based on the example given in Fig. 1.6 of the tutorial article where a 3-by-3 window (shaded area) is used to apply on a 5-by-5 input (shown in blue) to produce a 3-by-3 output (shown in green). As can be seen, in each step, the output is simply the maximum value of the local region of $x$ covered by the sliding window.
 
+$$y(i, j) = \max_{(m, n) \in \Omega(i,j)} x(m, n)$$
 
-
+![gif-maxpool](https://github.com/user-attachments/assets/ce9c962c-6a10-4107-9442-fb224b50d78f)
 
 #### 1.2.2 Applications
 
