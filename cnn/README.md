@@ -18,8 +18,9 @@ To train our model, we use a dataset of clock face images sourced from Kaggle (h
 
 The dataset is structured into `train`, `test`, and `valid` folders, with each class having its own subfolder containing images. Each image is in RGB format and resized to 224x224 pixels for input into the model. In the reduced dataset, for each class, we include 80 images in the training set, 10 in the validation set, and 10 in the test set.
 
-The following shows some images from the dataset:
+The following shows some training images from the dataset with a label of `04-00`:
 
+<img src="https://github.com/cfoh/FFNN-Examples/blob/main/cnn/dataset-12/train/04-00/10.jpg" alt="4pm" style="width:50pt"><img src="https://github.com/cfoh/FFNN-Examples/blob/main/cnn/dataset-12/train/04-00/12.jpg" alt="4pm" style="width:50pt"><img src="https://github.com/cfoh/FFNN-Examples/blob/main/cnn/dataset-12/train/04-00/15.jpg" alt="4pm" style="width:50pt"><img src="https://github.com/cfoh/FFNN-Examples/blob/main/cnn/dataset-12/train/04-00/20.jpg" alt="4pm" style="width:50pt"><img src="https://github.com/cfoh/FFNN-Examples/blob/main/cnn/dataset-12/train/04-00/22.jpg" alt="4pm" style="width:50pt"><img src="https://github.com/cfoh/FFNN-Examples/blob/main/cnn/dataset-12/train/04-00/27.jpg" alt="4pm" style="width:50pt"><img src="https://github.com/cfoh/FFNN-Examples/blob/main/cnn/dataset-12/train/04-00/32.jpg" alt="4pm" style="width:50pt">
 
 
 ## 3. CNN Design
