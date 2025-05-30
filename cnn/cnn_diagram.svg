@@ -1,0 +1,202 @@
+<svg viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="600" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="600" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2c3e50">CNN Model Architecture</text>
+  
+  <!-- Input Image -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="80" height="80" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+    <text x="40" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Input</text>
+    <text x="40" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">IMG×IMG×1</text>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <path d="M 140 120 L 170 120" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Conv2D Block 1 -->
+  <g transform="translate(180, 70)">
+    <!-- Conv layer -->
+    <rect x="0" y="0" width="70" height="70" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+    <text x="35" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">Conv2D</text>
+    <text x="35" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">32 filters</text>
+    <text x="35" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">3×3</text>
+    
+    <!-- MaxPool layer -->
+    <rect x="0" y="80" width="70" height="40" fill="#9b59b6" stroke="#8e44ad" stroke-width="2"/>
+    <text x="35" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">MaxPool2D</text>
+    <text x="35" y="112" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">2×2</text>
+    
+    <text x="35" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Block 1</text>
+  </g>
+  
+  <!-- Arrow 2 -->
+  <path d="M 260 120 L 290 120" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Conv2D Block 2 -->
+  <g transform="translate(300, 70)">
+    <!-- Conv layer -->
+    <rect x="0" y="0" width="70" height="70" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+    <text x="35" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">Conv2D</text>
+    <text x="35" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">32 filters</text>
+    <text x="35" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">3×3</text>
+    
+    <!-- MaxPool layer -->
+    <rect x="0" y="80" width="70" height="40" fill="#9b59b6" stroke="#8e44ad" stroke-width="2"/>
+    <text x="35" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">MaxPool2D</text>
+    <text x="35" y="112" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">2×2</text>
+    
+    <text x="35" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Block 2</text>
+  </g>
+  
+  <!-- Arrow 3 -->
+  <path d="M 380 120 L 410 120" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Conv2D Block 3 -->
+  <g transform="translate(420, 70)">
+    <!-- Conv layer -->
+    <rect x="0" y="0" width="70" height="70" fill="#e67e22" stroke="#d35400" stroke-width="2"/>
+    <text x="35" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">Conv2D</text>
+    <text x="35" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">64 filters</text>
+    <text x="35" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">3×3</text>
+    
+    <!-- MaxPool layer -->
+    <rect x="0" y="80" width="70" height="40" fill="#9b59b6" stroke="#8e44ad" stroke-width="2"/>
+    <text x="35" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white" font-weight="bold">MaxPool2D</text>
+    <text x="35" y="112" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">2×2</text>
+    
+    <text x="35" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Block 3</text>
+  </g>
+  
+  <!-- Arrow 4 -->
+  <path d="M 500 120 L 530 120" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Flatten -->
+  <g transform="translate(540, 90)">
+    <rect x="0" y="0" width="60" height="60" fill="#1abc9c" stroke="#16a085" stroke-width="2"/>
+    <text x="30" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">Flatten</text>
+    <text x="30" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">2D → 1D</text>
+  </g>
+  
+  <!-- Arrow 5 -->
+  <path d="M 610 120 L 640 120" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Dropout -->
+  <g transform="translate(650, 90)">
+    <rect x="0" y="0" width="60" height="60" fill="#f39c12" stroke="#e67e22" stroke-width="2"/>
+    <text x="30" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">Dropout</text>
+    <text x="30" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">0.5</text>
+    <text x="30" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Regularization</text>
+  </g>
+  
+  <!-- Arrow 6 -->
+  <path d="M 720 120 L 750 120" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Dense 512 -->
+  <g transform="translate(760, 80)">
+    <rect x="0" y="0" width="70" height="80" fill="#8e44ad" stroke="#732d91" stroke-width="2"/>
+    <text x="35" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">Dense</text>
+    <text x="35" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">512 units</text>
+    <text x="35" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">ReLU</text>
+    <text x="35" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Hidden Layer</text>
+  </g>
+  
+  <!-- Arrow 7 -->
+  <path d="M 840 120 L 870 120" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Output Dense -->
+  <g transform="translate(880, 80)">
+    <rect x="0" y="0" width="80" height="80" fill="#27ae60" stroke="#229954" stroke-width="2"/>
+    <text x="40" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white" font-weight="bold">Dense</text>
+    <text x="40" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">num_classes</text>
+    <text x="40" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Softmax</text>
+    <text x="40" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Output Layer</text>
+  </g>
+  
+  <!-- Feature Maps Visualization -->
+  <g transform="translate(50, 250)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">Feature Map Dimensions:</text>
+    
+    <!-- Input -->
+    <g transform="translate(0, 30)">
+      <rect x="0" y="0" width="40" height="40" fill="#3498db" opacity="0.7"/>
+      <text x="50" y="25" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Input: IMG × IMG × 1</text>
+    </g>
+    
+    <!-- After Block 1 -->
+    <g transform="translate(0, 80)">
+      <rect x="0" y="0" width="35" height="35" fill="#e74c3c" opacity="0.7"/>
+      <text x="45" y="22" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">After Block 1: (IMG/2) × (IMG/2) × 32</text>
+    </g>
+    
+    <!-- After Block 2 -->
+    <g transform="translate(0, 125)">
+      <rect x="0" y="0" width="30" height="30" fill="#e74c3c" opacity="0.7"/>
+      <text x="40" y="20" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">After Block 2: (IMG/4) × (IMG/4) × 32</text>
+    </g>
+    
+    <!-- After Block 3 -->
+    <g transform="translate(0, 165)">
+      <rect x="0" y="0" width="25" height="25" fill="#e67e22" opacity="0.7"/>
+      <text x="35" y="17" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">After Block 3: (IMG/8) × (IMG/8) × 64</text>
+    </g>
+    
+    <!-- Flattened -->
+    <g transform="translate(0, 200)">
+      <rect x="0" y="0" width="60" height="8" fill="#1abc9c" opacity="0.7"/>
+      <text x="70" y="8" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Flattened: 1D vector</text>
+    </g>
+  </g>
+  
+  <!-- Legend -->
+  <g transform="translate(650, 280)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">Layer Types:</text>
+    
+    <g transform="translate(0, 25)">
+      <rect x="0" y="0" width="20" height="15" fill="#e74c3c"/>
+      <text x="30" y="12" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Convolutional Layer</text>
+    </g>
+    
+    <g transform="translate(0, 50)">
+      <rect x="0" y="0" width="20" height="15" fill="#9b59b6"/>
+      <text x="30" y="12" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Max Pooling Layer</text>
+    </g>
+    
+    <g transform="translate(0, 75)">
+      <rect x="0" y="0" width="20" height="15" fill="#1abc9c"/>
+      <text x="30" y="12" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Flatten Layer</text>
+    </g>
+    
+    <g transform="translate(0, 100)">
+      <rect x="0" y="0" width="20" height="15" fill="#f39c12"/>
+      <text x="30" y="12" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Dropout Layer</text>
+    </g>
+    
+    <g transform="translate(0, 125)">
+      <rect x="0" y="0" width="20" height="15" fill="#8e44ad"/>
+      <text x="30" y="12" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Dense Layer (Hidden)</text>
+    </g>
+    
+    <g transform="translate(0, 150)">
+      <rect x="0" y="0" width="20" height="15" fill="#27ae60"/>
+      <text x="30" y="12" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">Dense Layer (Output)</text>
+    </g>
+  </g>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34495e"/>
+    </marker>
+  </defs>
+  
+  <!-- Data Flow Information -->
+  <g transform="translate(50, 480)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Data Flow:</text>
+    <text x="0" y="25" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">1. Input image passes through 3 convolutional blocks</text>
+    <text x="0" y="45" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">2. Each block reduces spatial size (pooling) and increases feature depth</text>
+    <text x="0" y="65" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">3. Features are flattened and passed through dense layers for classification</text>
+    <text x="0" y="85" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">4. Softmax output provides probability distribution over classes</text>
+  </g>
+</svg>
